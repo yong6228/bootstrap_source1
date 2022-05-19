@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ie8 웹</title>
+</head>
+
+<body>
+
+    <h1>
+        ie8 이하 또는 안드로이드 2.3이하 버젼에서는 svg이미지 안나오면 png 이미지
+        형식으로 보여주게 함
+    </h1>
+    <div>
+        <img src="images/light.svg" alt="전구이미지">
+    </div>
+    <!-- modernizr-custom.js 파일을 웹 페이지에 연결해줌 -->
+    <script src="js/modernizr-custom.js"></script>
+    <script>
+        // Check if browser can handle SVG
+        if (!Modernizr.svg) {
+            // Get all img tag of the document and create variables
+            var i = document.getElementsByTagName("img"), j, y;
+
+            // For each img tag
+            for (j = i.length; j--;) {
+                y = i[j].src
+                // If filenames ends with SVG
+                if (y.match(/svg$/)) {
+                    // Replace "svg" by "png"
+                    i[j].src = y.slice(0, -3) + 'png'
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

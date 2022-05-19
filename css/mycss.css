@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+/* .col-md-4 {
+    border: 1px solid red;
+} */
+table, td, th{
+    text-align: center;
+}
+th{
+    background-color: #ccc;
+    border: 2px solid aquamarine !important;
+}
+tr, td{
+    vertical-align:  middle !important;
+}
+/* .container{
+     margin: 0 auto;
+     width: 1000px; 
+ } */
+ ul{
+     list-style: none;
+ }
+
+div{
+    text-align: center;
+}
+
+
+

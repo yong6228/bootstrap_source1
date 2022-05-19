@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- 중요 : 다음의 웹사이트 접속해서 "Starter template" copy - 붙여넣기 - 
+          https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>bootstrap_template_navbar</title>
+  </head>
+  <body>    
+    <!-- 내비게이션 바는 nav태그로 만들며 기본으로 .navbar 스타일을 사용합니다.
+         어두운 배경에 어울리는 .navbar-dark 스타일을 추가하고
+         짙은 배경색을 넣기 위해 bg-dark 스타일을 사용합니다.
+         그리고 메뉴를 항상 화면 위쪽에 고정하기 위해 fixed-top 스타일도 함께 사용합니다. -->
+    <!-- .navbar: 내비게이션 바를 만드는 스타일 -->
+    <!-- .navbar-expand-md : 중간 화면(md) 이상에서 내비게이션을 펼쳐서 보여주는 스타일(sm이나 lg 등
+                        원하는 화면 크기로 지정할 수 있습니다) -->
+    <!-- .navbar-dark : 어두운 배경에 맞는 내비게이션 스타일 -->
+    <!-- .fixed-top : 내비게이션을 항상 화면 위쪽에 고정하는 스타일 -->
+    <!-- .bg-dark : 내비게이션 배경을 어둡게 지정하는 스타일 -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <!-- 내비게이션에 사이트 로고를 넣으려면 a태그와 함께 .navbar-brand 스타일을 사용합니다.
+           여기에서는 LOGO_IMG 텍스트 자리에 이미지 파일을 넣을 수도 있습니다.
+           그리고 모바일 화면일 때 햄버거 아이콘아이콘을 표시하기 위해
+           .navbar-toggler 스타일을 사용하여 버튼을 추가합니다. -->      
+      <a class="navbar-brand" href="#">LOGO_IMG</a>
+      <!-- 작은 화면에서 내비게이션을 감추기 위해 .navbar-toggler 스타일을 버튼에 적용합니다. -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- .navbar-toggler-icon 스타일을 사용해 메뉴가 확장되어 있을 때는 나타나지 않고
+           메뉴가 사라질 때만 나타나는 햄버거 아이콘을 지정합니다. -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 내비게이션 바 중에서 나타났다 사라졌다 할 부분에 .collapse와 .navbar-collapse 스타일을
+           적용합니다. 그리고 그 안에 <ul> 태그로 메뉴 항목을 넣습니다.
+            <ul> 태그에는 내비게이션을 만드는 스타일 .navbar-nav를 적용합니다.
+            .mr-auto 스타일은 오른쪽 마진을 자동으로 추가하는 스타일입니다. -->
+      <!-- .collapse : 나타났다 사라졌다 할 부분에 적용하는 스타일 -->
+      <!-- .navbar-collpse : 나타났다 사라졌다 할 내비게이션 바 -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- .navbar-nav : 내비게이션 바 메뉴 영역 -->
+        <!-- .mr-auto : 오른쪽 마진(margin-right) 자동 추가 -->
+        <ul class="navbar-nav mr-auto">
+          <!-- 이제 메뉴 항목을 넣어줍니다. 각 메뉴 항목은 .nav-item 스타일로 지정하고,
+               메뉴에 사용한 링크  a태그에는 .nav-link 스타일을 사용합니다. -->
+          <!-- .nav-item : 메뉴 항목 -->
+          <!-- .active : 활성화된 메뉴에 추가 -->
+          <li class="nav-item active">
+            <!-- .nav-link : 메뉴 링크 -->
+            <a class="nav-link" href="#">Main</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>                               
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
